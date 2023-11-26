@@ -54,7 +54,7 @@ inquirer
     // Generate the SVG markup for the selected shape
     const svgMarkup = shape.render();
 
-    const savedAs = `./Assets/${answers.logoShape}-logo.svg`;
+    const savedAs = `./examples/${answers.logoShape}-logo.svg`;
 
     // Save the SVG markup to a file with the formatted logo name in the Assets folder
     fs.writeFileSync(savedAs, svgMarkup, 'utf-8');
